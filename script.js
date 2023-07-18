@@ -1,7 +1,8 @@
 "use strict";
-// var bank = "Silicon Valley Bank";
+//Seleccionando el contenedor donde tendremos Pais y Direccion
 const sectionContainer = document.getElementById("container");
 
+// Funcion para consumir la API y mistrar pais y direccion
 const lookUp = function () {
 	const code = document.getElementById("codigo");
 	console.log(code.value);
@@ -26,6 +27,7 @@ const lookUp = function () {
 	});
 };
 
+//Evento para ejecutar funcion lookUp() cuando se precione enter
 document
 	.getElementById("codigo")
 	.addEventListener("keypress", function (event) {
