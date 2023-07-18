@@ -1,8 +1,8 @@
 "use strict";
-//Seleccionando el contenedor donde tendremos Pais y Direccion
+//Seleccionando el contenedor donde tendremos País y Dirección
 const sectionContainer = document.getElementById("container");
 
-// Funcion para consumir la API y mistrar pais y direccion
+// Función para consumir la API y mostrar país y dirección
 const lookUp = function () {
 	const code = document.getElementById("codigo");
 	console.log(code.value);
@@ -27,7 +27,7 @@ const lookUp = function () {
 	});
 };
 
-//Evento para ejecutar funcion lookUp() cuando se precione enter
+//Evento para ejecutar función lookUp() cuando se precione enter
 document
 	.getElementById("codigo")
 	.addEventListener("keypress", function (event) {
