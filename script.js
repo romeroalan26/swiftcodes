@@ -25,3 +25,13 @@ const lookUp = function () {
 		},
 	});
 };
+
+document
+	.getElementById("codigo")
+	.addEventListener("keypress", function (event) {
+		const key = event.key || event.keyCode;
+
+		if (key === "Enter" || key === 13) {
+			lookUp();
+		}
+	});
