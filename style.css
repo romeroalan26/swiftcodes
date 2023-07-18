@@ -13,6 +13,7 @@ body {
 	padding: 20px;
 }
 #codigo {
+	font-size: 21px;
 	outline: none;
 	padding: 10px;
 	border-radius: 5px;
@@ -21,6 +22,7 @@ body {
 
 button {
 	padding: 10px;
+	font-size: 21px;
 	background-color: rgb(255, 255, 255);
 	border: 1px solid #535353;
 	border-radius: 5px;
