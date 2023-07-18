@@ -5,7 +5,7 @@ const sectionContainer = document.getElementById("container");
 const lookUp = function () {
 	const code = document.getElementById("codigo");
 	console.log(code.value);
-
+	sectionContainer.textContent = " ";
 	$.ajax({
 		method: "GET",
 		url: `https://api.api-ninjas.com/v1/swiftcode?swift=${code.value}`,
@@ -15,8 +15,8 @@ const lookUp = function () {
 			const [resultado] = result;
 			console.log(resultado);
 			const html = `
-   <p><b>Pais</b>: ${resultado.country}</p>
-	<p><b>Direccion</b>: ${resultado.city}</p>
+   <p><b>País</b>: ${resultado.country}</p>
+	<p><b>Dirección</b>: ${resultado.city}</p>
    `;
 			sectionContainer.insertAdjacentHTML("beforeend", html);
 		},
